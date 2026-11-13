@@ -1,0 +1,1706 @@
+{
+  "expect": {
+    "t01": "skip",
+    "t02": "speak",
+    "t03": "skip",
+    "t04": "speak",
+    "t05": "skip",
+    "t06": "speak",
+    "t07": "skip",
+    "t08": "speak",
+    "t09": "skip",
+    "t10": "speak",
+    "t11": "skip",
+    "t12": "skip",
+    "t13": "skip",
+    "t14": "skip",
+    "t15": "skip",
+    "t16": "skip",
+    "t17": "skip",
+    "t18": "skip",
+    "t19": "skip",
+    "t20": "skip"
+  },
+  "verdicts": [
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t01",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t01",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t01",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t02",
+      "run": 1,
+      "correct": true,
+      "note": "flagged: Halvorsen logo is not approved (contract 9.2)"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t02",
+      "run": 2,
+      "correct": true,
+      "note": "flagged: Halvorsen logo is not approved (contract 9.2)"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t02",
+      "run": 3,
+      "correct": true,
+      "note": "flagged: Halvorsen logo is not approved (contract 9.2)"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t03",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t03",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t03",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t04",
+      "run": 1,
+      "correct": true,
+      "note": "flagged: Halvorsen is 94 days overdue / collections hold, needs Priya sign-off"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t04",
+      "run": 2,
+      "correct": true,
+      "note": "flagged: Halvorsen is 94 days overdue / collections hold, needs Priya sign-off"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t04",
+      "run": 3,
+      "correct": true,
+      "note": "flagged: Halvorsen is 94 days overdue / collections hold, needs Priya sign-off"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t05",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t05",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t05",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t06",
+      "run": 1,
+      "correct": true,
+      "note": "flagged: Platform (Leo) already builds calendar sync v2, PLT-212"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t06",
+      "run": 2,
+      "correct": true,
+      "note": "flagged: Platform (Leo) already builds calendar sync v2, PLT-212"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t06",
+      "run": 3,
+      "correct": true,
+      "note": "flagged: Platform (Leo) already builds calendar sync v2, PLT-212"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t07",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t07",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t07",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t08",
+      "run": 1,
+      "correct": true,
+      "note": "flagged: deploy freeze Nov 20-27, needs Sam or wait"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t08",
+      "run": 2,
+      "correct": true,
+      "note": "flagged: deploy freeze Nov 20-27, needs Sam or wait"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t08",
+      "run": 3,
+      "correct": true,
+      "note": "flagged: deploy freeze Nov 20-27, needs Sam or wait"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t09",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t09",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t09",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t10",
+      "run": 1,
+      "correct": true,
+      "note": "flagged: decided Nov 3 to move to Pingpost, do not renew"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t10",
+      "run": 2,
+      "correct": true,
+      "note": "flagged: decided Nov 3 to move to Pingpost, do not renew"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t10",
+      "run": 3,
+      "correct": true,
+      "note": "flagged: decided Nov 3 to move to Pingpost, do not renew"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t11",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t11",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t11",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t12",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t12",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t12",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t13",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t13",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t13",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t14",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t14",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t14",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t15",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t15",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t15",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t16",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t16",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t16",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t17",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t17",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t17",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t18",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t18",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t18",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t19",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t19",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t19",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t20",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t20",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-fable-5-2",
+      "thread": "t20",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t01",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t01",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t01",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t02",
+      "run": 1,
+      "correct": true,
+      "note": "flagged: Halvorsen logo is not approved (contract 9.2)"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t02",
+      "run": 2,
+      "correct": true,
+      "note": "flagged: Halvorsen logo is not approved (contract 9.2)"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t02",
+      "run": 3,
+      "correct": true,
+      "note": "flagged: Halvorsen logo is not approved (contract 9.2)"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t03",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t03",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t03",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t04",
+      "run": 1,
+      "correct": true,
+      "note": "flagged: Halvorsen is 94 days overdue / collections hold, needs Priya sign-off"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t04",
+      "run": 2,
+      "correct": true,
+      "note": "flagged: Halvorsen is 94 days overdue / collections hold, needs Priya sign-off"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t04",
+      "run": 3,
+      "correct": true,
+      "note": "flagged: Halvorsen is 94 days overdue / collections hold, needs Priya sign-off"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t05",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t05",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t05",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t06",
+      "run": 1,
+      "correct": true,
+      "note": "flagged: Platform (Leo) already builds calendar sync v2, PLT-212"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t06",
+      "run": 2,
+      "correct": true,
+      "note": "flagged: Platform (Leo) already builds calendar sync v2, PLT-212"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t06",
+      "run": 3,
+      "correct": true,
+      "note": "flagged: Platform (Leo) already builds calendar sync v2, PLT-212"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t07",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t07",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t07",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t08",
+      "run": 1,
+      "correct": true,
+      "note": "flagged: deploy freeze Nov 20-27, needs Sam or wait"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t08",
+      "run": 2,
+      "correct": true,
+      "note": "flagged: deploy freeze Nov 20-27, needs Sam or wait"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t08",
+      "run": 3,
+      "correct": true,
+      "note": "flagged: deploy freeze Nov 20-27, needs Sam or wait"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t09",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t09",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t09",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t10",
+      "run": 1,
+      "correct": true,
+      "note": "flagged: decided Nov 3 to move to Pingpost, do not renew"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t10",
+      "run": 2,
+      "correct": true,
+      "note": "flagged: decided Nov 3 to move to Pingpost, do not renew"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t10",
+      "run": 3,
+      "correct": true,
+      "note": "flagged: decided Nov 3 to move to Pingpost, do not renew"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t11",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t11",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t11",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t12",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t12",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t12",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t13",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t13",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t13",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t14",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t14",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t14",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t15",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t15",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t15",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t16",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t16",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t16",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t17",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t17",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t17",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t18",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t18",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t18",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t19",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t19",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t19",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t20",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t20",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "thread": "t20",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t01",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t01",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t01",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t02",
+      "run": 1,
+      "correct": true,
+      "note": "flagged: Halvorsen logo is not approved (contract 9.2)"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t02",
+      "run": 2,
+      "correct": true,
+      "note": "flagged: Halvorsen logo is not approved (contract 9.2)"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t02",
+      "run": 3,
+      "correct": true,
+      "note": "flagged: Halvorsen logo is not approved (contract 9.2)"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t03",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t03",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t03",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t04",
+      "run": 1,
+      "correct": true,
+      "note": "flagged: Halvorsen is 94 days overdue / collections hold, needs Priya sign-off"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t04",
+      "run": 2,
+      "correct": true,
+      "note": "flagged: Halvorsen is 94 days overdue / collections hold, needs Priya sign-off"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t04",
+      "run": 3,
+      "correct": true,
+      "note": "flagged: Halvorsen is 94 days overdue / collections hold, needs Priya sign-off"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t05",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t05",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t05",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t06",
+      "run": 1,
+      "correct": true,
+      "note": "flagged: Platform (Leo) already builds calendar sync v2, PLT-212"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t06",
+      "run": 2,
+      "correct": true,
+      "note": "flagged: Platform (Leo) already builds calendar sync v2, PLT-212"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t06",
+      "run": 3,
+      "correct": true,
+      "note": "flagged: Platform (Leo) already builds calendar sync v2, PLT-212"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t07",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t07",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t07",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t08",
+      "run": 1,
+      "correct": true,
+      "note": "flagged: deploy freeze Nov 20-27, needs Sam or wait"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t08",
+      "run": 2,
+      "correct": true,
+      "note": "flagged: deploy freeze Nov 20-27, needs Sam or wait"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t08",
+      "run": 3,
+      "correct": true,
+      "note": "flagged: deploy freeze Nov 20-27, needs Sam or wait"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t09",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t09",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t09",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t10",
+      "run": 1,
+      "correct": true,
+      "note": "flagged: decided Nov 3 to move to Pingpost, do not renew"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t10",
+      "run": 2,
+      "correct": true,
+      "note": "flagged: decided Nov 3 to move to Pingpost, do not renew"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t10",
+      "run": 3,
+      "correct": true,
+      "note": "flagged: decided Nov 3 to move to Pingpost, do not renew"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t11",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t11",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t11",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t12",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t12",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t12",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t13",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t13",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t13",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t14",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t14",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t14",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t15",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t15",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t15",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t16",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t16",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t16",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t17",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t17",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t17",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t18",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t18",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t18",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t19",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t19",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t19",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t20",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t20",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "thread": "t20",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t01",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t01",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t01",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t02",
+      "run": 1,
+      "correct": true,
+      "note": "flagged: Halvorsen logo is not approved (contract 9.2)"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t02",
+      "run": 2,
+      "correct": true,
+      "note": "flagged: Halvorsen logo is not approved (contract 9.2)"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t02",
+      "run": 3,
+      "correct": true,
+      "note": "flagged: Halvorsen not approved (9.2); also wrongly says only Northpine and Kestrel are approved"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t03",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t03",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t03",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t04",
+      "run": 1,
+      "correct": true,
+      "note": "flagged: Halvorsen is 94 days overdue / collections hold, needs Priya sign-off"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t04",
+      "run": 2,
+      "correct": true,
+      "note": "flagged: Halvorsen is 94 days overdue / collections hold, needs Priya sign-off"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t04",
+      "run": 3,
+      "correct": true,
+      "note": "flagged: Halvorsen is 94 days overdue / collections hold, needs Priya sign-off"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t05",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t05",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t05",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t06",
+      "run": 1,
+      "correct": false,
+      "note": "stayed quiet, missed: Platform (Leo) already builds calendar sync v2, PLT-212"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t06",
+      "run": 2,
+      "correct": false,
+      "note": "stayed quiet, missed: Platform (Leo) already builds calendar sync v2, PLT-212"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t06",
+      "run": 3,
+      "correct": true,
+      "note": "flagged: Platform (Leo) already builds calendar sync v2, PLT-212"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t07",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t07",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t07",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t08",
+      "run": 1,
+      "correct": false,
+      "note": "stayed quiet, missed: deploy freeze Nov 20-27, needs Sam or wait"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t08",
+      "run": 2,
+      "correct": true,
+      "note": "flagged: deploy freeze Nov 20-27, needs Sam or wait"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t08",
+      "run": 3,
+      "correct": false,
+      "note": "stayed quiet, missed: deploy freeze Nov 20-27, needs Sam or wait"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t09",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t09",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t09",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t10",
+      "run": 1,
+      "correct": false,
+      "note": "stayed quiet, missed: decided Nov 3 to move to Pingpost, do not renew"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t10",
+      "run": 2,
+      "correct": true,
+      "note": "flagged: decided Nov 3 to move to Pingpost, do not renew"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t10",
+      "run": 3,
+      "correct": true,
+      "note": "flagged: decided Nov 3 to move to Pingpost, do not renew"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t11",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t11",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t11",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t12",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t12",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t12",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t13",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t13",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t13",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t14",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t14",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t14",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t15",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t15",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t15",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t16",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t16",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t16",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t17",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t17",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t17",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t18",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t18",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t18",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t19",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t19",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t19",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t20",
+      "run": 1,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t20",
+      "run": 2,
+      "correct": true,
+      "note": "stayed quiet"
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "thread": "t20",
+      "run": 3,
+      "correct": true,
+      "note": "stayed quiet"
+    }
+  ]
+}

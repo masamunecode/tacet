@@ -4,93 +4,420 @@
     "about": "38-person startup. Appointment scheduling software for clinics.",
     "today": "Friday, November 13, 2026",
     "memory": [
-      {"area": "People", "facts": [
-        "Sam Okafor: CTO",
-        "Priya Nair: CFO",
-        "Leo Brandt: Platform team lead",
-        "Mara Chen: Growth team lead",
-        "Jonas Weber: designer",
-        "Rosa Lindqvist: marketing",
-        "Ines Duarte: account executive",
-        "Dev Malik: sales",
-        "Noah Fischer: ops coordinator",
-        "Theo Park, Kai Ito: engineers"
-      ]},
-      {"area": "Customer logo permissions (from signed contracts)", "facts": [
-        "Northpine Dental: approved for the website and case studies (signed Aug 2026)",
-        "Kestrel Vet Clinics: approved for the website",
-        "Brightmoor Physio: approved for the website",
-        "Halvorsen Health Group: NOT approved. Contract section 9.2 forbids any public use of their name or logo."
-      ]},
-      {"area": "Finance", "facts": [
-        "Halvorsen Health Group: invoice INV-2291, $18,400, 94 days overdue. On collections hold since Oct 30: no new invoices, discounts or expansions without Priya's sign-off.",
-        "Kestrel Vet Clinics: invoice INV-2307, $6,200, due Nov 15."
-      ]},
-      {"area": "Engineering", "facts": [
-        "Production deploy freeze Nov 20 to Nov 27 (Thanksgiving week). Only hotfixes, approved by Sam.",
-        "Calendar sync v2 (two-way Google and Outlook sync): owned by the Platform team (Leo), in progress, ETA Dec 4, ticket PLT-212."
-      ]},
-      {"area": "Ops", "facts": [
-        "SMS vendor Relaybird: contract ends Nov 30. Decided Nov 3 in #ops (Rosa, Sam, Priya): move SMS to Pingpost, do not renew Relaybird. Pingpost goes live Nov 28."
-      ]},
-      {"area": "Design", "facts": [
-        "Main booking button label decided Nov 6 in #design: \"Book visit\"."
-      ]},
-      {"area": "Marketing", "facts": [
-        "Pricing page relaunch moved to Jan 12."
-      ]}
+      {
+        "area": "People",
+        "facts": [
+          "Sam Okafor: CTO",
+          "Priya Nair: CFO",
+          "Leo Brandt: Platform team lead",
+          "Mara Chen: Growth team lead",
+          "Jonas Weber: designer",
+          "Rosa Lindqvist: marketing",
+          "Ines Duarte: account executive",
+          "Dev Malik: sales",
+          "Noah Fischer: ops coordinator",
+          "Theo Park, Kai Ito: engineers"
+        ]
+      },
+      {
+        "area": "Customer logo permissions (from signed contracts)",
+        "facts": [
+          "Northpine Dental: approved for the website and case studies (signed Aug 2026)",
+          "Kestrel Vet Clinics: approved for the website",
+          "Brightmoor Physio: approved for the website",
+          "Halvorsen Health Group: NOT approved. Contract section 9.2 forbids any public use of their name or logo."
+        ]
+      },
+      {
+        "area": "Finance",
+        "facts": [
+          "Halvorsen Health Group: invoice INV-2291, $18,400, 94 days overdue. On collections hold since Oct 30: no new invoices, discounts or expansions without Priya's sign-off.",
+          "Kestrel Vet Clinics: invoice INV-2307, $6,200, due Nov 15."
+        ]
+      },
+      {
+        "area": "Engineering",
+        "facts": [
+          "Production deploy freeze Nov 20 to Nov 27 (Thanksgiving week). Only hotfixes, approved by Sam.",
+          "Calendar sync v2 (two-way Google and Outlook sync): owned by the Platform team (Leo), in progress, ETA Dec 4, ticket PLT-212."
+        ]
+      },
+      {
+        "area": "Ops",
+        "facts": [
+          "SMS vendor Relaybird: contract ends Nov 30. Decided Nov 3 in #ops (Rosa, Sam, Priya): move SMS to Pingpost, do not renew Relaybird. Pingpost goes live Nov 28."
+        ]
+      },
+      {
+        "area": "Design",
+        "facts": [
+          "Main booking button label decided Nov 6 in #design: \"Book visit\"."
+        ]
+      },
+      {
+        "area": "Marketing",
+        "facts": [
+          "Pricing page relaunch moved to Jan 12."
+        ]
+      }
     ]
   },
   "threads": [
-    {"id": "t01", "channel": "random", "messages": [
-      {"who": "Theo Park", "time": "11:52", "text": "lunch at Bao House at 1?"},
-      {"who": "Kai Ito", "time": "11:53", "text": "in"},
-      {"who": "Ines Duarte", "time": "11:55", "text": "in, but 1:15"},
-      {"who": "Theo Park", "time": "11:55", "text": "1:15 it is"}
-    ]},
-    {"id": "t02", "channel": "marketing", "messages": [
-      {"who": "Jonas Weber", "time": "13:40", "text": "new homepage hero is ready. added a \"trusted by\" strip: Northpine Dental, Halvorsen Health Group, Kestrel Vet Clinics", "attachment": "logos-strip-v3.png"},
-      {"who": "Mara Chen", "time": "13:44", "text": "love it. halvorsen is our biggest name, put it first"},
-      {"who": "Jonas Weber", "time": "13:46", "text": "done. pushing it to the live site at 4pm today"}
-    ]},
-    {"id": "t03", "channel": "eng", "messages": [
-      {"who": "Theo Park", "time": "10:05", "text": "fixed the flaky reminder test, PR #482 is up. could someone review?"},
-      {"who": "Kai Ito", "time": "10:07", "text": "on it"},
-      {"who": "Kai Ito", "time": "10:31", "text": "approved, a couple of nits, nothing blocking"},
-      {"who": "Theo Park", "time": "10:33", "text": "merged, thanks"}
-    ]},
-    {"id": "t04", "channel": "sales", "messages": [
-      {"who": "Ines Duarte", "time": "14:10", "text": "halvorsen wants to add 3 more clinics!! 🎉"},
-      {"who": "Ines Duarte", "time": "14:11", "text": "sending them the expansion invoice today with the 20% multi-site discount"},
-      {"who": "Dev Malik", "time": "14:12", "text": "huge, nice one"}
-    ]},
-    {"id": "t05", "channel": "design", "messages": [
-      {"who": "Jonas Weber", "time": "09:30", "text": "quick one: for the main CTA, \"Book visit\" or \"Schedule\"?"},
-      {"who": "Mara Chen", "time": "09:34", "text": "didn't we settle this?"},
-      {"who": "Jonas Weber", "time": "09:35", "text": "yes, nov 6, Book visit. ignore me, had an old figma open"}
-    ]},
-    {"id": "t06", "channel": "growth", "messages": [
-      {"who": "Mara Chen", "time": "15:02", "text": "kicking off a 2-week sprint: two-way google calendar sync, so new clinics see their schedule on day one of onboarding"},
-      {"who": "Mara Chen", "time": "15:03", "text": "@Kai @Theo you're on it from monday"},
-      {"who": "Kai Ito", "time": "15:05", "text": "👍"}
-    ]},
-    {"id": "t07", "channel": "marketing", "messages": [
-      {"who": "Rosa Lindqvist", "time": "11:15", "text": "drafting the Northpine Dental case study, can I use their logo on the cover?"},
-      {"who": "Jonas Weber", "time": "11:18", "text": "yes, they signed off in august"},
-      {"who": "Rosa Lindqvist", "time": "11:19", "text": "perfect"}
-    ]},
-    {"id": "t08", "channel": "eng", "messages": [
-      {"who": "Theo Park", "time": "16:20", "text": "new reminder engine is done. planning to deploy to prod monday the 23rd, first thing"},
-      {"who": "Theo Park", "time": "16:21", "text": "not a hotfix but it's low risk, it's behind a flag"},
-      {"who": "Kai Ito", "time": "16:24", "text": "sounds good"}
-    ]},
-    {"id": "t09", "channel": "eng", "messages": [
-      {"who": "Kai Ito", "time": "12:40", "text": "anyone know why staging builds take 20 min today?"},
-      {"who": "Kai Ito", "time": "12:58", "text": "nvm, CI cache was cold after the runner upgrade. back to 4 min"}
-    ]},
-    {"id": "t10", "channel": "ops", "messages": [
-      {"who": "Noah Fischer", "time": "17:05", "text": "relaybird renewal came in, same price as last year. signing it today so SMS reminders don't stop on dec 1"},
-      {"who": "Ines Duarte", "time": "17:09", "text": "makes sense"}
-    ]}
+    {
+      "id": "t01",
+      "channel": "random",
+      "messages": [
+        {
+          "who": "Theo Park",
+          "time": "11:52",
+          "text": "lunch at Bao House at 1?"
+        },
+        {
+          "who": "Kai Ito",
+          "time": "11:53",
+          "text": "in"
+        },
+        {
+          "who": "Ines Duarte",
+          "time": "11:55",
+          "text": "in, but 1:15"
+        },
+        {
+          "who": "Theo Park",
+          "time": "11:55",
+          "text": "1:15 it is"
+        }
+      ]
+    },
+    {
+      "id": "t02",
+      "channel": "marketing",
+      "messages": [
+        {
+          "who": "Jonas Weber",
+          "time": "13:40",
+          "text": "new homepage hero is ready. added a \"trusted by\" strip: Northpine Dental, Halvorsen Health Group, Kestrel Vet Clinics",
+          "attachment": "logos-strip-v3.png"
+        },
+        {
+          "who": "Mara Chen",
+          "time": "13:44",
+          "text": "love it. halvorsen is our biggest name, put it first"
+        },
+        {
+          "who": "Jonas Weber",
+          "time": "13:46",
+          "text": "done. pushing it to the live site at 4pm today"
+        }
+      ]
+    },
+    {
+      "id": "t03",
+      "channel": "eng",
+      "messages": [
+        {
+          "who": "Theo Park",
+          "time": "10:05",
+          "text": "fixed the flaky reminder test, PR #482 is up. could someone review?"
+        },
+        {
+          "who": "Kai Ito",
+          "time": "10:07",
+          "text": "on it"
+        },
+        {
+          "who": "Kai Ito",
+          "time": "10:31",
+          "text": "approved, a couple of nits, nothing blocking"
+        },
+        {
+          "who": "Theo Park",
+          "time": "10:33",
+          "text": "merged, thanks"
+        }
+      ]
+    },
+    {
+      "id": "t04",
+      "channel": "sales",
+      "messages": [
+        {
+          "who": "Ines Duarte",
+          "time": "14:10",
+          "text": "halvorsen wants to add 3 more clinics!! 🎉"
+        },
+        {
+          "who": "Ines Duarte",
+          "time": "14:11",
+          "text": "sending them the expansion invoice today with the 20% multi-site discount"
+        },
+        {
+          "who": "Dev Malik",
+          "time": "14:12",
+          "text": "huge, nice one"
+        }
+      ]
+    },
+    {
+      "id": "t05",
+      "channel": "design",
+      "messages": [
+        {
+          "who": "Jonas Weber",
+          "time": "09:30",
+          "text": "quick one: for the main CTA, \"Book visit\" or \"Schedule\"?"
+        },
+        {
+          "who": "Mara Chen",
+          "time": "09:34",
+          "text": "didn't we settle this?"
+        },
+        {
+          "who": "Jonas Weber",
+          "time": "09:35",
+          "text": "yes, nov 6, Book visit. ignore me, had an old figma open"
+        }
+      ]
+    },
+    {
+      "id": "t06",
+      "channel": "growth",
+      "messages": [
+        {
+          "who": "Mara Chen",
+          "time": "15:02",
+          "text": "kicking off a 2-week sprint: two-way google calendar sync, so new clinics see their schedule on day one of onboarding"
+        },
+        {
+          "who": "Mara Chen",
+          "time": "15:03",
+          "text": "@Kai @Theo you're on it from monday"
+        },
+        {
+          "who": "Kai Ito",
+          "time": "15:05",
+          "text": "👍"
+        }
+      ]
+    },
+    {
+      "id": "t07",
+      "channel": "marketing",
+      "messages": [
+        {
+          "who": "Rosa Lindqvist",
+          "time": "11:15",
+          "text": "drafting the Northpine Dental case study, can I use their logo on the cover?"
+        },
+        {
+          "who": "Jonas Weber",
+          "time": "11:18",
+          "text": "yes, they signed off in august"
+        },
+        {
+          "who": "Rosa Lindqvist",
+          "time": "11:19",
+          "text": "perfect"
+        }
+      ]
+    },
+    {
+      "id": "t08",
+      "channel": "eng",
+      "messages": [
+        {
+          "who": "Theo Park",
+          "time": "16:20",
+          "text": "new reminder engine is done. planning to deploy to prod monday the 23rd, first thing"
+        },
+        {
+          "who": "Theo Park",
+          "time": "16:21",
+          "text": "not a hotfix but it's low risk, it's behind a flag"
+        },
+        {
+          "who": "Kai Ito",
+          "time": "16:24",
+          "text": "sounds good"
+        }
+      ]
+    },
+    {
+      "id": "t09",
+      "channel": "eng",
+      "messages": [
+        {
+          "who": "Kai Ito",
+          "time": "12:40",
+          "text": "anyone know why staging builds take 20 min today?"
+        },
+        {
+          "who": "Kai Ito",
+          "time": "12:58",
+          "text": "nvm, CI cache was cold after the runner upgrade. back to 4 min"
+        }
+      ]
+    },
+    {
+      "id": "t10",
+      "channel": "ops",
+      "messages": [
+        {
+          "who": "Noah Fischer",
+          "time": "17:05",
+          "text": "relaybird renewal came in, same price as last year. signing it today so SMS reminders don't stop on dec 1"
+        },
+        {
+          "who": "Ines Duarte",
+          "time": "17:09",
+          "text": "makes sense"
+        }
+      ]
+    },
+    {
+      "id": "t11",
+      "channel": "random",
+      "messages": [
+        {
+          "who": "Mara Chen",
+          "time": "10:12",
+          "text": "planning the december offsite dinner, ~20 people. anyone know a good place near the office?"
+        }
+      ]
+    },
+    {
+      "id": "t12",
+      "channel": "sales",
+      "messages": [
+        {
+          "who": "Ines Duarte",
+          "time": "15:40",
+          "text": "halvorsen's CFO emailed asking for a copy of their Q3 usage report. sending it over now"
+        },
+        {
+          "who": "Dev Malik",
+          "time": "15:41",
+          "text": "👍"
+        }
+      ]
+    },
+    {
+      "id": "t13",
+      "channel": "eng",
+      "messages": [
+        {
+          "who": "Theo Park",
+          "time": "17:10",
+          "text": "moving the reminder engine deploy to thursday the 19th, morning, so it lands before the freeze"
+        },
+        {
+          "who": "Kai Ito",
+          "time": "17:12",
+          "text": "good call"
+        }
+      ]
+    },
+    {
+      "id": "t14",
+      "channel": "growth",
+      "messages": [
+        {
+          "who": "Mara Chen",
+          "time": "15:30",
+          "text": "update: we won't build our own calendar sync. onboarding will use calendar sync v2 when Leo's team ships it on dec 4, i'll plan the flow around that"
+        },
+        {
+          "who": "Kai Ito",
+          "time": "15:31",
+          "text": "makes sense"
+        }
+      ]
+    },
+    {
+      "id": "t15",
+      "channel": "design",
+      "messages": [
+        {
+          "who": "Jonas Weber",
+          "time": "14:02",
+          "text": "which icon set do you like for the app, rounded or sharp? screenshots in the figma"
+        },
+        {
+          "who": "Rosa Lindqvist",
+          "time": "14:05",
+          "text": "rounded, feels friendlier"
+        }
+      ]
+    },
+    {
+      "id": "t16",
+      "channel": "ops",
+      "messages": [
+        {
+          "who": "Noah Fischer",
+          "time": "11:20",
+          "text": "pingpost onboarding call booked for nov 24 to prep the nov 28 go-live"
+        },
+        {
+          "who": "Rosa Lindqvist",
+          "time": "11:22",
+          "text": "thanks noah"
+        }
+      ]
+    },
+    {
+      "id": "t17",
+      "channel": "marketing",
+      "messages": [
+        {
+          "who": "Rosa Lindqvist",
+          "time": "16:05",
+          "text": "adding Brightmoor Physio's logo to the website footer next to Northpine and Kestrel"
+        }
+      ]
+    },
+    {
+      "id": "t18",
+      "channel": "eng",
+      "messages": [
+        {
+          "who": "Kai Ito",
+          "time": "13:15",
+          "text": "flaky test in calendar-sync again, retrying the job"
+        },
+        {
+          "who": "Kai Ito",
+          "time": "13:22",
+          "text": "green now"
+        }
+      ]
+    },
+    {
+      "id": "t19",
+      "channel": "sales",
+      "messages": [
+        {
+          "who": "Dev Malik",
+          "time": "12:10",
+          "text": "kestrel confirmed INV-2307 goes out on the 15th as planned"
+        },
+        {
+          "who": "Ines Duarte",
+          "time": "12:11",
+          "text": "great"
+        }
+      ]
+    },
+    {
+      "id": "t20",
+      "channel": "general",
+      "messages": [
+        {
+          "who": "Sam Okafor",
+          "time": "09:00",
+          "text": "reminder: production deploy freeze next week, nov 20 to 27. hotfixes only, and they go through me"
+        }
+      ]
+    }
   ]
 }
