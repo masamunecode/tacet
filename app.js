@@ -351,14 +351,14 @@ function boardHTML(wf, st = () => '') {
   const nNeed = THREADS.filter((t) => EXPECT[t.id] === 'speak').length;
   const sub = `${plural(THREADS.length, 'thread')}${GRADED ? ` (${nNeed} need an agent, ${THREADS.length - nNeed} don't)` : ''} · ${MODELS.length} models · ${plural(runList().length, 'run')}${S.run === 'all' ? '' : ' (run ' + S.run + ')'}`;
   const big = (a, s, full) => `<div class="vs-c a-${a}"><div class="k">${a === 'naive' ? nbot('sm') : bot('sm')}${A[a].name}<small>${a === 'naive' ? 'posts whenever it can help' : 'speaks only when someone needs it'}</small></div>
-    <div class="n">${full.n ? Math.round(GRADED ? s.wN : s.spoke) : 'n/a'}</div><div class="l">${GRADED ? 'messages nobody needed' : 'messages posted'}</div><div class="sp">${full.n ? spendOf(s) : 'no results yet'}</div></div>`;
+    <div class="vs-b"><div class="n">${full.n ? Math.round(GRADED ? s.wN : s.spoke) : 'n/a'}</div><div><div class="l">${GRADED ? 'messages nobody needed' : 'messages posted'}</div><div class="sp">${full.n ? spendOf(s) : 'no results yet'}</div></div></div></div>`;
   const tn = BOTH ? total('naive', wf) : null, tt = total('tacet', wf), fn = BOTH ? total('naive') : null, ft = total('tacet');
   const cols = MODELS.map((m, k) => {
     const w = wf ? wf(k) : undefined, sn = BOTH ? stats('naive', m.id, w) : null, s = stats('tacet', m.id, w), full = stats('tacet', m.id);
     const v = (x) => Math.round(GRADED ? x.wN : x.spoke);
     return `<div class="col ${m.id === S.model ? 'on' : ''}" style="${st(3 + k)}"><h3>${esc(m.name)}</h3>
       <div class="pair">${sn ? `<span class="a-naive"><b>${v(sn)}</b><small>naive</small></span><span class="arrow">${ic('right')}</span>` : ''}<span class="a-tacet"><b>${full.n ? v(s) : 'n/a'}</b><small>Tacet</small></span></div>
-      ${sn ? `<div class="w">${Math.round(sn.wN) || !GRADED ? `naive spent ${spendOf(sn)}` : 'naive wasted nothing'}</div>` : `<div class="w">${full.n ? spendOf(s) : ''}</div>`}
+      ${sn ? `<div class="w">${Math.round(sn.wN) || !GRADED ? `${spendOf(sn)}${GRADED ? ' wasted' : ''}` : 'naive wasted nothing'}</div>` : `<div class="w">${full.n ? spendOf(s) : ''}</div>`}
       ${GRADED && full.need ? `<div class="hon ${full.missed ? 'miss' : ''}">${full.missed ? `Tacet missed ${Math.round(full.missed)} of ${full.need} calls that needed it` : `Tacet spoke on all ${full.need} calls that needed it`}</div>` : ''}</div>`;
   }).join('');
   const honest = !GRADED ? 'Not graded yet: these are raw counts of posted messages.' :
@@ -512,7 +512,7 @@ function drawCapture(T, t) {
   const lastHit = nv.length ? t - nv[nv.length - 1].t : 9, bump = 1 + 0.09 * Math.sin(Math.PI * clamp(lastHit / 0.3));
   const pile = nv.map((c, i) => {
     const h = hash(c.th.id + c.m.id + i), p = ease((t - c.t) / 0.28), col = i % 3, row = Math.floor(i / 3);
-    const x = col * 148 + (h % 22) - 6, y = row * 21 + ((h >>> 5) % 9), rot = ((h >>> 9) % 15) - 7;
+    const x = col * 133 + (h % 12) - 2, y = row * 21 + ((h >>> 5) % 9), rot = ((h >>> 9) % 15) - 7;
     return `<span class="chipn" style="left:${x}px;bottom:${y}px;opacity:${p.toFixed(3)};transform:translateY(${((1 - p) * -70).toFixed(1)}px) rotate(${rot}deg)">${esc(c.m.name.split(' ')[0])} · #${c.th.channel}</span>`;
   }).join('');
   const perModel = MODELS.map((m, k) => `<span class="${m.id === feat ? 'on' : ''}">${esc(m.name.split(' ')[0])} <b>${nv.filter((c) => c.k === k).length}</b></span>`).join('');
@@ -544,7 +544,7 @@ function drawCapture(T, t) {
     const fill = (k) => { const f = ease((t - T.beatEnd - 0.45 - k * 0.08) / 0.9); return () => f; };
     over += `<div class="k-end" style="background:rgba(7,24,27,${(0.72 * ep).toFixed(3)})"><div class="board" style="${cst(ep, 26, 0.035)}">${boardHTML(fill, (i) => cst(ease((t - T.beatEnd - 0.2 - i * 0.11) / 0.4), 12))}</div></div>`;
   }
-  $('#stage').innerHTML = `<div class="k-side">${side}</div><div class="k-main">${main}</div><div class="k-right">${right}</div>${over}`;
+  $('#stage').innerHTML = `<div class="k-side">${side}</div><div class="k-main ${inBeat ? 'beat' : ''}">${main}</div><div class="k-right">${right}</div>${over}`;
 }
 
 // ---------- boot

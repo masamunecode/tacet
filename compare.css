@@ -195,3 +195,28 @@
 .capture .board .col .w{font-size:16.5px;letter-spacing:-.03em;white-space:nowrap}
 .capture .board .col .hon{font-size:17px;line-height:1.25}
 .capture .board-f{font-size:20px;margin-top:18px}
+.chipn{width:128px;font-size:14.5px;padding:3px 7px}
+.k-card{overflow:hidden}
+.beat .k-head{margin:12px 0 8px;padding-bottom:8px}
+.beat .k-text,.beat .k-msg.rep .k-text{font-size:22.5px}
+.beat .k-agent.a-tacet .k-text{font-size:22px}
+.beat .k-msg,.beat .k-agent{padding-top:5px;padding-bottom:5px}
+.beat .k-agent{padding:13px 16px 13px 14px;margin-top:8px}
+.beat .k-note{margin-top:9px;font-size:17px}
+.board .col .w{font-family:var(--ui)}
+.capture .board .col .w{font-size:17px;letter-spacing:0}
+.k-i2>div{align-content:center}
+.capture .vs-b{display:flex;align-items:center;gap:30px}
+.capture .vs-c .n{min-width:190px}
+.capture .vs-c .l{font-size:32px;line-height:1.15}
+.capture .vs-c .sp{font-size:22px;margin-top:10px}
+.capture .board .col{padding:18px 20px}
+.capture .col h3{font-size:26px}
+.capture .pair{margin:10px 0 8px}
+.capture .pair b{font-size:68px}
+.capture .pair small{font-size:20px}
+.capture .board .col .w{font-size:18.5px}
+.capture .board .col .hon{font-size:18.5px;margin-top:10px}
+.capture .board-f{font-size:22px;margin-top:22px}
+.vs-c .sp{white-space:nowrap}
+.capture .vs-c .sp{font-size:21px;letter-spacing:-.03em}
