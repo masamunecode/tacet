@@ -310,7 +310,9 @@ svg{display:block;flex:none}
 .scrim{display:none}
 .capture *{transition:none!important;animation:none!important;caret-color:transparent}
 .capture ::-webkit-scrollbar{display:none}
-.grow-w{display:grid;flex:none}.grow-w>div{min-height:0;overflow:hidden}
+.grow-w{display:grid;flex:none}.grow-w>div{min-height:0;overflow:hidden;margin:0 -20px 0 -48px;padding:0 20px 0 48px}
+.strip-slot .grow-w>div{margin:0;padding:0 0 4px}
+.strip-slot .strip{margin-top:6px;box-shadow:0 2px 10px rgba(16,41,46,.08)}
 
 /* narrower desktops */
 @media (max-width:1180px){
@@ -341,3 +343,5 @@ svg{display:block;flex:none}
 .hov button:hover{background:var(--bg-2)}
 .hov .ic{width:16px;height:16px}
 @media (hover:hover){.msg:hover>.body>.hov{display:flex}}
+.col .big small{font-size:24px;margin-left:2px}
+@media (max-width:860px){.top .agent-btn{display:none}}

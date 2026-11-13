@@ -159,7 +159,7 @@ function renderTop() {
 
 // ---------- sidebar
 function unread(ch) {
-  if (F) return inChannel(ch).filter((t) => ORD[t.id] > F.idx).reduce((n, t) => n + t.messages.length, 0);
+  if (F) { const nx = THREADS[F.idx + 1]; return nx && nx.channel === ch && ch !== F.active ? nx.messages.length : 0; } // the next thread lands, then we jump to it
   return visited.has(ch) ? 0 : inChannel(ch).reduce((n, t) => n + t.messages.length, 0);
 }
 function renderSide() {
@@ -170,7 +170,7 @@ function renderSide() {
   h += `<span class="s-item"${st()}>${ic('thread')}<span class="nm">Threads</span></span><span class="s-item"${st()}>${ic('at')}<span class="nm">Mentions &amp; reactions</span></span>`;
   h += `<div class="s-sec"${st()}>${ic('down')}Channels</div>`;
   CHANNELS.forEach((ch, j) => {
-    const n = unread(ch), bp = F ? F.badgeP(j) : 1;
+    const n = unread(ch), bp = F ? F.badgeP : 1;
     h += `<button class="s-item ${active === ch ? 'on' : ''} ${n && bp > 0 ? 'unread' : ''}" data-act="channel" data-arg="${ch}"${st()}>${ic('hash')}<span class="nm">${ch}</span>${n && bp > 0 ? `<span class="cnt"${bp < 1 ? ` style="transform:scale(${(0.4 + 0.6 * bp).toFixed(3)});opacity:${bp.toFixed(3)}"` : ''}>${n}</span>` : ''}</button>`;
   });
   h += `<div class="s-sec"${st()}>${ic('down')}Direct messages</div>`;
@@ -427,22 +427,25 @@ function frame(t) {
     read: THREADS.filter((x) => t >= tDecide(3, ORD[x.id])).length,
     w: (k) => (id) => ease((t - tDecide(k, ORD[id])) / 0.3),
     sideP: (i) => ease((t - 0.1 - i * 0.055) / 0.4),
-    badgeP: (j) => ease((t - 0.75 - j * 0.07) / 0.3),
+    badgeP: ease((t - (idx < 0 ? 0.85 : tStart(idx + 1) - 0.4)) / 0.2),
   };
 }
 function stripHTML(t) {
-  if (!F || F.idx < 0) return '';
-  const th = THREADS[F.idx], i = F.idx, p = ease((t - tStart(i) - TL.strip) / 0.18);
-  if (p <= 0) return '';
+  const p = ease((t - 1.0) / 0.4); // the strip arrives once, during the intro, and stays put so the layout never jumps
+  if (!F || p <= 0) return '';
+  const i = F.idx, th = THREADS[Math.max(0, i)], reading = i >= 0 && t - tStart(i) >= TL.strip;
   const last = th.messages[th.messages.length - 1];
   const chips = MODELS.slice(0, 4).map((m, k) => {
-    const d = t - tDecide(k, i), o = outcome(m.id, th.id);
+    const d = i < 0 ? -1 : t - tDecide(k, i), o = outcome(m.id, th.id);
+    if (!reading) return `<div class="chip ${m.id === S.model ? 'feat' : ''}"><div class="nm">${esc(m.name)}</div><div class="st"><span class="think">${[0, 1, 2].map(() => '<i style="opacity:.22"></i>').join('')}</span></div></div>`;
     if (d < 0 || !o.n) return `<div class="chip ${m.id === S.model ? 'feat' : ''}"><div class="nm">${esc(m.name)}</div><div class="st"><span class="think">${[0, 1, 2].map((j) => `<i style="opacity:${(0.25 + 0.75 * Math.max(0, Math.sin(t * 11 - j * 1.1 - k))).toFixed(3)}"></i>`).join('')}</span></div></div>`;
     const pop = 1 + 0.07 * Math.sin(Math.PI * clamp(d / 0.24));
     const label = !o.spoke ? 'quiet' : o.spoke === o.n ? 'spoke' : `spoke ${o.spoke}/${o.n}`;
     return `<div class="chip ${o.spoke ? 'speak' : 'skip'} ${m.id === S.model ? 'feat' : ''}" style="transform:scale(${pop.toFixed(4)})"><div class="nm">${esc(m.name)}${S.run === 'all' ? pips(o) : ''}</div><div class="st">${label}${mark(o.mark, 'mk')}</div></div>`;
   }).join('');
-  return `<div class="strip" style="${fx(p, 14)}"><div class="strip-top">${bot('xs')}<span><b>Tacet</b> read the thread in <b>#${th.channel}</b> at ${fromMin(toMin(last.time) + 1)}. Four models, same question: speak or stay quiet?</span><span class="n">${i + 1}/${THREADS.length}</span></div><div class="chips">${chips}</div></div>`;
+  const line = i < 0 ? '<b>Tacet</b> is reading along. Four models, one question per thread: speak or stay quiet?'
+    : `<b>Tacet</b> ${reading ? 'read' : 'is reading'} the thread in <b>#${th.channel}</b>${reading ? ' at ' + fromMin(toMin(last.time) + 1) : ''}. Four models, same question: speak or stay quiet?`;
+  return grow(`<div class="strip" style="${fx(p, 14)}"><div class="strip-top">${bot('xs')}<span>${line}</span><span class="n">${Math.max(0, i + 1)}/${THREADS.length}</span></div><div class="chips">${chips}</div></div>`, p);
 }
 function draw(t) {
   t = Math.max(0, Math.min(TL.dur, +t || 0));
