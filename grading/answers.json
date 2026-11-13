@@ -1,0 +1,122 @@
+{
+  "t01": {
+    "expect": "skip",
+    "why": "lunch chat"
+  },
+  "t02": {
+    "expect": "speak",
+    "must": "Halvorsen logo is not approved (contract 9.2)",
+    "keys": [
+      "halvorsen"
+    ],
+    "any": [
+      "9.2",
+      "not approved",
+      "contract",
+      "forbid",
+      "permission",
+      "can't use",
+      "cannot use"
+    ]
+  },
+  "t03": {
+    "expect": "skip",
+    "why": "review already done, merged"
+  },
+  "t04": {
+    "expect": "speak",
+    "must": "Halvorsen is 94 days overdue / collections hold, needs Priya sign-off",
+    "keys": [],
+    "any": [
+      "overdue",
+      "inv-2291",
+      "collections",
+      "hold",
+      "priya",
+      "18,400",
+      "18400"
+    ]
+  },
+  "t05": {
+    "expect": "skip",
+    "why": "settled in the thread itself"
+  },
+  "t06": {
+    "expect": "speak",
+    "must": "Platform (Leo) already builds calendar sync v2, PLT-212",
+    "keys": [],
+    "any": [
+      "leo",
+      "platform",
+      "plt-212",
+      "sync v2",
+      "already"
+    ]
+  },
+  "t07": {
+    "expect": "skip",
+    "why": "Northpine is approved and the thread already says so"
+  },
+  "t08": {
+    "expect": "speak",
+    "must": "deploy freeze Nov 20-27, needs Sam or wait",
+    "keys": [],
+    "any": [
+      "freeze"
+    ]
+  },
+  "t09": {
+    "expect": "skip",
+    "why": "resolved by the asker"
+  },
+  "t10": {
+    "expect": "speak",
+    "must": "decided Nov 3 to move to Pingpost, do not renew",
+    "keys": [],
+    "any": [
+      "pingpost",
+      "nov 3",
+      "november 3"
+    ]
+  },
+  "t11": {
+    "expect": "skip",
+    "why": "open question for people, nothing in memory"
+  },
+  "t12": {
+    "expect": "skip",
+    "why": "usage report is not an invoice, discount or expansion"
+  },
+  "t13": {
+    "expect": "skip",
+    "why": "Nov 19 is before the freeze"
+  },
+  "t14": {
+    "expect": "skip",
+    "why": "already aligned with Leo's sync v2"
+  },
+  "t15": {
+    "expect": "skip",
+    "why": "design opinion asked of the team"
+  },
+  "t16": {
+    "expect": "skip",
+    "why": "consistent with the Pingpost plan"
+  },
+  "t17": {
+    "expect": "skip",
+    "why": "Brightmoor is approved for the website"
+  },
+  "t18": {
+    "expect": "skip",
+    "why": "resolved by the asker"
+  },
+  "t19": {
+    "expect": "skip",
+    "why": "matches memory"
+  },
+  "t20": {
+    "expect": "skip",
+    "why": "the CTO is announcing the freeze himself"
+  }
+}
