@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Murmo · Tidewell</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div id="app" class="app">
+  <header id="top" class="top"></header>
+  <nav id="rail" class="rail"></nav>
+  <aside id="side" class="side"></aside>
+  <main id="main" class="main">
+    <div id="mhead" class="mhead"></div>
+    <div id="mlist" class="mlist"></div>
+    <div id="strip" class="strip-slot"></div>
+    <form id="composer" class="composer" autocomplete="off">
+      <div class="c-box">
+        <div class="c-tools" id="ctools"></div>
+        <input id="cinput" type="text" placeholder="Message" aria-label="Message">
+        <div class="c-foot" id="cfoot"></div>
+      </div>
+    </form>
+  </main>
+  <aside id="panel" class="panel"></aside>
+  <div id="scrim" class="scrim" data-act="close-sheets"></div>
+  <div id="overlay" class="overlay"></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
